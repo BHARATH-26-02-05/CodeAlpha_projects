@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="CodeAlpha_imageGalary.css" />
+</head>
+<body>
+  <header>
+    <h1>Responsive Image Gallery</h1>
+    <p>Click on the images to view them in a lightbox.</p>
+  </header>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="architecture">Architecture</button>
+    <button class="filter-btn" data-filter="people">People</button>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item nature">
+      <img src="images/nature1.jpeg" alt="Nature Image 1">    </div>
+    <div class="gallery-item architecture">
+      <img src="images/house5.jpeg" alt="Architecture Image 1" />
+    </div>
+      <div class="gallery-item nature">
+        <img src="images/nature2.jpeg" alt="Nature Image 2">
+      </div>
+      <div class="gallery-item nature">
+        <img src="images/nature3.jpeg" alt="Nature Image 3">
+      </div>
+      <div class="gallery-item nature">
+        <img src="images/nature4.jpeg" alt="Nature Image 4">
+
+      </div >
+       <div class="gallery-item architecture">
+      <img src="images/house1.webp" alt="Architecture Image 1" />
+    </div>
+     <div class="gallery-item nature">
+       <img src="images/nature6.jpeg" alt="Nature Image 5">
+     </div >
+      <div class="gallery-item architecture">
+        <img src="images/house2.webp" alt="Architecture Image 2" />
+      </div>
+     <div class="gallery-item nature">
+       <img src="images/nature9.webp" alt="Nature Image 6">
+     </div >
+     <div class="gallery-item nature">
+       <img src="images/nature7.jpeg" alt="Nature Image 7">
+     </div>
+      <div class="gallery-item architecture">
+          <img src="images/house3.webp" alt="Architecture Image 3" />
+      </div>
+      <div class="gallery-item architecture">
+        <img src="images/house4.webp" alt="Architecture Image 4" />
+      </div>
+      <div class="gallery-item nature">
+        <img src="images/nature81.jpeg" alt="Nature Image 8">
+      </div>
+      <div class="gallery-item architecture">
+        <img src="images/house7.jpeg" alt="Architecture Image 5" />
+      </div>
+     <div class="gallery-item nature">
+       <img src="images/nature9.webp" alt="Nature Image 9">
+     </div>
+
+
+   
+    <div class="gallery-item people">
+      <img src="images/cream-pastry.jpeg" alt="People Image 1" />
+
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <script src="CodeAlpha_imageGalary.js"></script>
+</body>
+</html>
